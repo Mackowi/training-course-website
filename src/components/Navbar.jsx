@@ -2,10 +2,34 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Logo from '../images/logo.png'
+import { useState, useEffect } from 'react'
 
 function NavigationBar() {
+  const [navbarBg, setNavbarBg] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setNavbarBg(true)
+      } else {
+        setNavbarBg(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <Navbar expand='lg' fixed='top' variant='dark'>
+    <Navbar
+      expand='lg'
+      fixed='top'
+      variant='dark'
+      className={navbarBg ? 'bg-dark' : ''}
+    >
       <Container>
         <Navbar.Brand href='/'>
           <img src={Logo} alt='logo' width='150' />
