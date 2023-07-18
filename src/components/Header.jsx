@@ -10,7 +10,7 @@ import slide3 from '../images/header-slide-3.jpg'
 function Header() {
   return (
     <>
-      <section className='header py-7 vh-100 text-white'>
+      <section id='home' className='header py-7 vh-100 text-white'>
         <Container>
           <Row className='mb-5 text-center'>
             <Col className='text-container d-flex flex-column align-items-center'>

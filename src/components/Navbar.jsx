@@ -37,13 +37,12 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
-            <Nav.Link href='/' className='text-white'>
+            <Nav.Link href='/#home' className='text-white'>
               Home
             </Nav.Link>
-            <Nav.Link href='/link'>Link</Nav.Link>
-            <Nav.Link href='/summary'>Summary</Nav.Link>
-            <Nav.Link href='/takeaways'>Takeaways</Nav.Link>
-            <Nav.Link href='/subscribe'>Subscribe</Nav.Link>
+            <Nav.Link href='/#details1'>Discovery</Nav.Link>
+            <Nav.Link href='/#summary'>Summary</Nav.Link>
+            <Nav.Link href='/#subscribe'>Subscribe</Nav.Link>
             <Nav.Link href='/#somewhere'>
               <span className='fa-stack'>
                 <i className='fas fa-circle fa-stack-2x text-primary'></i>

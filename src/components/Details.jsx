@@ -2,9 +2,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-function Details({ img }) {
+function Details({ sectionId, img }) {
   return (
-    <section id='details1' className='py-6'>
+    <section id={`details${sectionId}`} className='py-6'>
       <Container>
         <Row>
           <Col lg={6}>

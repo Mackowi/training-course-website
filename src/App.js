@@ -6,6 +6,9 @@ import Register from './components/Register'
 import Details from './components/Details'
 import Points from './components/Points'
 import Summary from './components/Summary'
+import Invitation from './components/Invitation'
+import Subscribe from './components/Subscribe'
+import Footer from './components/Footer'
 import Img1 from './images/instructor.jpg'
 import Img2 from './images/audience.jpg'
 
@@ -15,10 +18,13 @@ function App() {
       <NavigationBar />
       <Header />
       <Register />
-      <Details img={Img1} />
+      <Details sectionId={1} img={Img1} />
       <Points />
       <Summary />
-      <Details img={Img2} />
+      <Details sectionId={2} img={Img2} />
+      <Invitation />
+      <Subscribe />
+      <Footer />
     </div>
   )
 }
